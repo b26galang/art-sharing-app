@@ -1,20 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CardModule } from 'primeng/card';
 import { ArtCardComponent } from './components/art-card/art-card.component';
-import { GalleriaModule } from 'primeng/galleria';
 import { ArtCarouselComponent } from './components/art-carousel/art-carousel.component';
-import { TagModule } from 'primeng/tag';
 import { CategoryTagComponent } from './components/category-tag/category-tag.component';
-import { SidebarModule } from 'primeng/sidebar';
 import { NavSidebarComponent } from './components/nav-sidebar/nav-sidebar.component';
-import { InputTextModule } from 'primeng/inputtext';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
-import { AvatarModule } from 'primeng/avatar';
-import { AvatarGroupModule } from 'primeng/avatargroup';
 import { UserIconComponent } from './components/user-icon/user-icon.component';
-
-
+import { MenubarComponent } from "./components/menubar/menubar.component";
 
 @Component({
   selector: 'app-root',
@@ -26,8 +18,9 @@ import { UserIconComponent } from './components/user-icon/user-icon.component';
     CategoryTagComponent,
     NavSidebarComponent,
     SearchBarComponent,
-    UserIconComponent
-  ],
+    UserIconComponent,
+    MenubarComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

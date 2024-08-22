@@ -1,0 +1,8 @@
+a {
+    text-decoration: none;
+}
+
+.card {
+    display: inline-block;
+    margin: 20px;
+}

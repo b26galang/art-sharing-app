@@ -5,6 +5,7 @@ import { RippleModule } from 'primeng/ripple';
 import { AvatarModule } from 'primeng/avatar';
 import { StyleClassModule } from 'primeng/styleclass';
 import { Sidebar } from 'primeng/sidebar';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-nav-sidebar',
@@ -14,7 +15,8 @@ import { Sidebar } from 'primeng/sidebar';
     AvatarModule,
     ButtonModule,
     RippleModule,
-    StyleClassModule
+    StyleClassModule,
+    OverlayModule
   ],
   templateUrl: './nav-sidebar.component.html',
   styleUrl: './nav-sidebar.component.css'

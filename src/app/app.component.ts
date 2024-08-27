@@ -7,6 +7,7 @@ import { NavSidebarComponent } from './components/nav-sidebar/nav-sidebar.compon
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { UserIconComponent } from './components/user-icon/user-icon.component';
 import { MenubarComponent } from "./components/menubar/menubar.component";
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { MenubarComponent } from "./components/menubar/menubar.component";
     NavSidebarComponent,
     SearchBarComponent,
     UserIconComponent,
-    MenubarComponent
+    MenubarComponent,
+    OverlayModule
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -1,14 +1,13 @@
 <p-toolbar>
     <div class="p-toolbar-group-start">
         <!--fix sidebar menu button last-->
-        <app-nav-sidebar></app-nav-sidebar>
         <span class="brand-title">Art Vault</span>
     </div>
     <div class="p-toolbar-group-center">
         <app-search-bar></app-search-bar>
     </div>
     <div class="p-toolbar-group-end">
-        <app-upload-btn></app-upload-btn>
-        <app-user-icon></app-user-icon>
+        <a href="/upload"><app-upload-btn></app-upload-btn></a>
+        <a href="/profile"><app-user-icon></app-user-icon></a>
     </div>
 </p-toolbar>

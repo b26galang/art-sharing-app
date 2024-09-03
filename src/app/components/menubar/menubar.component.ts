@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ToolbarModule } from 'primeng/toolbar';
-import { NavSidebarComponent } from '../nav-sidebar/nav-sidebar.component';
 import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { UploadBtnComponent } from '../upload-btn/upload-btn.component';
 import { UserIconComponent } from '../user-icon/user-icon.component';
@@ -10,7 +9,6 @@ import { UserIconComponent } from '../user-icon/user-icon.component';
   standalone: true,
   imports: [
     ToolbarModule,
-    NavSidebarComponent,
     SearchBarComponent,
     UploadBtnComponent,
     UserIconComponent

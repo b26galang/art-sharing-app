@@ -1,0 +1,45 @@
+input, label {
+    display: block;
+}
+
+textarea, input {
+    width: 500px;
+    min-width: 250px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+.p-button {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+.main-container {
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+}

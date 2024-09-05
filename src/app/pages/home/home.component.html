@@ -1,9 +1,15 @@
 <div class="main-container">
-    <a href="/art">
     <div class="card-container">
         <div *ngFor="let _ of [].constructor(20)">
         <app-art-card></app-art-card>
         </div>
     </div>
-    </a>
+<!--Display Only, Fix last-->
+<div class="card flex justify-content-center">
+    <p-paginator 
+        (onPageChange)="onPageChange($event)" 
+        [first]="first" 
+        [rows]="rows" 
+        [totalRecords]="120" 
+        [rowsPerPageOptions]="[10, 20, 30]" />
 </div>

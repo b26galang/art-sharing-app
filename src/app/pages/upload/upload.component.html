@@ -1,1 +1,30 @@
-<p>upload works!</p>
+<div class="main-container">
+    <p-button 
+        label="Upload Image" 
+        icon="pi pi-upload" 
+        class="p-button-primary"
+    />
+
+    <span>JPEG/GIF/PNG</span>
+    <span>You can upload up to 32 MB</span>
+    
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" pInputText id="title" />
+    
+    <div class="form-group"></div>
+        <label for="caption">Caption</label>
+        <textarea 
+            rows="5"
+            cols="30" 
+            pInputTextarea 
+            id="caption"
+            >
+        </textarea>
+    </div>
+
+    <p-button 
+        label="Post" 
+        class="p-button-primary"
+    />
+</div>

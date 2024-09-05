@@ -4,12 +4,5 @@
         <app-art-card></app-art-card>
         </div>
     </div>
-<!--Display Only, Fix last-->
-<div class="card flex justify-content-center">
-    <p-paginator 
-        (onPageChange)="onPageChange($event)" 
-        [first]="first" 
-        [rows]="rows" 
-        [totalRecords]="120" 
-        [rowsPerPageOptions]="[10, 20, 30]" />
 </div>
+<app-paginator></app-paginator>

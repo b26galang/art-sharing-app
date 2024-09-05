@@ -3,14 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ArtCardComponent } from '../../components/art-card/art-card.component';
 import { ArtCarouselComponent } from '../../components/art-carousel/art-carousel.component';
 import { CategoryTagComponent } from '../../components/category-tag/category-tag.component';
-import { PaginatorModule } from 'primeng/paginator';
-
-interface PageEvent {
-  first: number;
-  rows: number;
-  page: number;
-  pageCount: number;
-}
+import { PaginatorComponent } from '../../components/paginator/paginator.component';
 
 @Component({
   selector: 'app-home',
@@ -20,19 +13,11 @@ interface PageEvent {
     ArtCarouselComponent,
     CategoryTagComponent,
     CommonModule,
-    PaginatorModule
+    PaginatorComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  first: number = 0;
-
-  rows: number = 10;
-
-  onPageChange(event: PageEvent) {
-      this.first = event.first;
-      this.rows = event.rows;
-  }
 
 }

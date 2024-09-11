@@ -29,7 +29,7 @@ label {
 .main-container {
     width: 80%;
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 40px;
     display: flex;
     flex-direction: column;

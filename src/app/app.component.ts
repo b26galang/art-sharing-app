@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { UserIconComponent } from './components/user-icon/user-icon.component';
 import { MenubarComponent } from "./components/menubar/menubar.component";
 import { HomeComponent } from './pages/home/home.component';
-
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +21,12 @@ import { HomeComponent } from './pages/home/home.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'art-sharing-app';
+export class AppComponent implements OnInit {
+  title = "art-sharing-app";
+
+  constructor(private themeService: ThemeService) {}
+
+  ngOnInit(): void {
+    this.themeService.switchTheme(this.themeService.currentTheme);
+  }
 }

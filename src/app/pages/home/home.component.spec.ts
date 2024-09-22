@@ -9,7 +9,10 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PaginatorComponent]
+      imports: [
+        PaginatorComponent,
+        ArtCardComponent
+      ]
     })
     .compileComponents();
 
@@ -23,7 +26,7 @@ describe('HomeComponent', () => {
   });
 
   /* will need to dynamic update in the future */
-  it('should display artcards', () => {
+  it('should display art cards', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const artCard = compiled.querySelector('app-art-card');
     expect(artCard).toBeTruthy();

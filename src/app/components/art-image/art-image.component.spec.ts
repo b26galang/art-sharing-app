@@ -17,7 +17,7 @@ describe('ArtImageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create p-image component', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { UserIconComponent } from './user-icon.component';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
 describe('UserIconComponent', () => {
   let component: UserIconComponent;
@@ -8,7 +9,9 @@ describe('UserIconComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UserIconComponent]
+      imports: [
+        AvatarModule,
+        AvatarGroupModule]
     })
     .compileComponents();
 
@@ -17,7 +20,7 @@ describe('UserIconComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create create the user icon component', () => {
     expect(component).toBeTruthy();
   });
 });

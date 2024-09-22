@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HomeComponent } from './home.component';
+import { ArtCardComponent } from '../../components/art-card/art-card.component';
+import { PaginatorComponent } from '../../components/paginator/paginator.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -8,7 +9,7 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HomeComponent]
+      imports: [PaginatorComponent]
     })
     .compileComponents();
 
@@ -17,7 +18,20 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should render the homepage', () => {
     expect(component).toBeTruthy();
+  });
+
+  /* will need to dynamic update in the future */
+  it('should display artcards', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const artCard = compiled.querySelector('app-art-card');
+    expect(artCard).toBeTruthy();
+  });
+
+  it('should display paginator', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const paginator = compiled.querySelector('app-paginator');
+    expect(paginator).toBeTruthy();
   });
 });

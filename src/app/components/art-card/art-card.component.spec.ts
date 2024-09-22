@@ -32,7 +32,7 @@ describe('ArtCardComponent', () => {
   });
 
   /* will need dynamic update in the future */
-  it('should display an image that navigates to single page view when clicked',() => {
+  it('should display an image',() => {
     const compiled = fixture.nativeElement as HTMLElement;
     const artImage = compiled.querySelector('app-art-image');
     expect(artImage).toBeTruthy();

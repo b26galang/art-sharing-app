@@ -2,5 +2,5 @@
     [icon]="isDarkMode ? 'pi pi-sun' : 'pi pi-moon'" 
     [text]="true" 
     (click)="toggleTheme()"
-    size="large"
+    ariaLabel="{{ isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}}"
 />

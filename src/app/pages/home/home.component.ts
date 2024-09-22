@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArtCardComponent } from '../../components/art-card/art-card.component';
-import { ArtCarouselComponent } from '../../components/art-carousel/art-carousel.component';
-import { CategoryTagComponent } from '../../components/category-tag/category-tag.component';
 import { PaginatorComponent } from '../../components/paginator/paginator.component';
 
 @Component({
@@ -10,8 +8,6 @@ import { PaginatorComponent } from '../../components/paginator/paginator.compone
   standalone: true,
   imports: [
     ArtCardComponent,
-    ArtCarouselComponent,
-    CategoryTagComponent,
     CommonModule,
     PaginatorComponent
   ],

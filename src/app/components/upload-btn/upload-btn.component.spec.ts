@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { UploadBtnComponent } from './upload-btn.component';
 
 describe('UploadBtnComponent', () => {
@@ -17,7 +16,13 @@ describe('UploadBtnComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create upload button', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should navigate to upload image form when clicked', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const uploadButton = compiled.querySelector('a');
+    expect(uploadButton?.getAttribute('href')).toBe('/upload');
   });
 });

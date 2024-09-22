@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: inherit;
+}
+
 .card {
     display: inline-block;
     margin: 10px;

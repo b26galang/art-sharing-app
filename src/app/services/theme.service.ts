@@ -22,7 +22,7 @@ export class ThemeService {
     this.applyTheme(theme);
   }
 
-  private applyTheme(theme: string): void {
+  applyTheme(theme: string): void {
     const themeLink = document.getElementById('app-theme') as HTMLLinkElement;
 
     if (themeLink) {

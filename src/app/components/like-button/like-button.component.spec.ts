@@ -17,7 +17,7 @@ describe('LikeButtonComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create a like button', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -17,7 +17,7 @@ describe('ProfileComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should render the profile page', () => {
     expect(component).toBeTruthy();
   });
 });

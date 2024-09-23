@@ -10,3 +10,20 @@ a:visited {
     display: inline-block;
     margin: 10px;
 }
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+::ng-deep .p-card .p-card-body {
+    padding: 0.5rem;
+}
+
+.user-info {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5rem;
+}

@@ -23,5 +23,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './profile.component.css'
 })
 export class ProfileComponent {
+  isFollowing: boolean = false;
+
+  toggleFollow() {
+    this.isFollowing = !this.isFollowing;
+  }
 
 }

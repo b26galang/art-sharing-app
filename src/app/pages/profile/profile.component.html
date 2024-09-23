@@ -22,8 +22,10 @@
         </ul>
     </div>
     <p-button 
-        icon="pi pi-plus" 
-        label="Follow" 
+        [icon]="isFollowing? 'pi pi-plus': ''" 
+        [label]="isFollowing? 'Follow' : 'Following'"
+        [severity]="isFollowing? 'primary' : 'secondary'"
+        (click)="toggleFollow()"
     /> 
 </div>
 <div class="profile-art-container">

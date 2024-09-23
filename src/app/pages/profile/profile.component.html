@@ -1,7 +1,36 @@
-<div class="banner-container">
-    <p-image 
-        src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png" 
-        alt="Profile banner"
-        class="profile-banner"
-    />
+<p-image 
+    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png" 
+    alt="Profile banner"
+    class="profile-banner"
+/>
+<div class='main-container'>
+    <div class="user-info">
+        <p-avatar 
+        icon="pi pi-user" 
+        styleClass="mr-2" 
+        [style]="{ 'background-color': '#ece9fc', color: '#2a1261' }" 
+        shape="circle" 
+        size="xlarge"
+        />
+        <h2>Username</h2>
+    </div>
+    <div>
+        <ul class="follower-info">
+            <li>7 Following</li>
+            <li>10 Followers</li>
+            <li>20 Likes Received</li>
+        </ul>
+    </div>
+    <p-button 
+        icon="pi pi-plus" 
+        label="Follow" 
+    /> 
 </div>
+<div class="profile-art-container">
+    <div class="card-container">
+        <div *ngFor="let _ of [].constructor(20)">
+        <app-profile-art-card></app-profile-art-card>
+        </div>
+    </div>
+</div>
+<app-paginator></app-paginator>

@@ -1,0 +1,9 @@
+.card {
+    display: inline-block;
+    margin: 10px;
+}
+
+::ng-deep .p-card .p-card-body {
+    gap: 0rem;
+    padding: 0.5rem;
+}

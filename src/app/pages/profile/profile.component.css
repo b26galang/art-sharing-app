@@ -4,3 +4,50 @@
     height: 300px;
     object-fit: cover;
 }
+
+.main-container {
+    width: 50%;
+    max-width: 1600px;
+    margin: 0.5rem auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.user-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.follower-info {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.follower-info li {
+    margin: 0 10px;  
+}
+
+p-avatar {
+    margin: 0 1rem;
+}
+
+.profile-art-container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1600px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+::ng-deep html {
+    overflow: scroll !important;
+}

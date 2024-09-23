@@ -22,9 +22,9 @@
         </ul>
     </div>
     <p-button 
-        [icon]="isFollowing? 'pi pi-plus': ''" 
-        [label]="isFollowing? 'Follow' : 'Following'"
-        [severity]="isFollowing? 'primary' : 'secondary'"
+        [icon]="isFollowing? '': 'pi pi-plus'" 
+        [label]="isFollowing? 'Following' : 'Follow'"
+        [severity]="isFollowing? 'secondary' : 'primary'"
         (click)="toggleFollow()"
     /> 
 </div>

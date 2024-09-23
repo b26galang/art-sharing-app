@@ -5,6 +5,7 @@ import { UserIconComponent } from '../user-icon/user-icon.component';
 import { ButtonModule } from 'primeng/button';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { ArtImageComponent } from '../art-image/art-image.component';
+import { LikeButtonComponent } from '../like-button/like-button.component';
 
 describe('ArtCardComponent', () => {
   let component: ArtCardComponent;
@@ -17,7 +18,8 @@ describe('ArtCardComponent', () => {
         UserIconComponent, 
         ButtonModule,
         ArtImageComponent,
-        OverlayModule
+        OverlayModule,
+        LikeButtonComponent
       ]
     })
     .compileComponents();
@@ -38,9 +40,9 @@ describe('ArtCardComponent', () => {
     expect(artImage).toBeTruthy();
   });
 
-  it('should display the heart icon', () => {
+  it('should display the like button', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    const heartIcon = compiled.querySelector('i.pi.pi-heart');
+    const heartIcon = compiled.querySelector('app-like-button');
     expect(heartIcon).toBeTruthy();
   });
 

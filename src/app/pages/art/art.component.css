@@ -20,4 +20,19 @@
 
 .text-container {
     flex: 1 1 40%;
+    padding-top: 2rem;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
 }

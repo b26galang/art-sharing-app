@@ -10,7 +10,3 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
-::ng-deep html {
-    overflow: scroll !important;
-}

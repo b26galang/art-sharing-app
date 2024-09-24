@@ -14,7 +14,8 @@ import { Button, ButtonModule } from 'primeng/button';
     UserIconComponent,
     LikeButtonComponent,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    Button
 ],
   templateUrl: './art.component.html',
   styleUrl: './art.component.css'

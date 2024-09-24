@@ -1,6 +1,5 @@
 import { TestBed } from '@angular/core/testing';
 import { ThemeService } from './theme.service';
-import { L } from '@angular/cdk/keycodes';
 
 describe('ThemeService', () => {
   let service: ThemeService;

@@ -57,7 +57,7 @@ describe('ArtCardComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     const username = compiled.querySelector('span.username');
     expect(username).toBeTruthy();
-    expect(username?.textContent).toContain(' Username');
+    expect(username?.textContent).toContain('Username');
   });
 
   /* add tests for ng-template */

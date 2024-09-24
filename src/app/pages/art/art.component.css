@@ -20,7 +20,6 @@
 
 .text-container {
     flex: 1 1 40%;
-    padding-top: 2rem;
 }
 
 .user-info {
@@ -41,5 +40,12 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1rem;
+}
+
+.comment-container{
+  margin-top: 1 rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }

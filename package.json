@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --out-dir dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

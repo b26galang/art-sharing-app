@@ -4,6 +4,7 @@ import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { DarkModeSwitchComponent } from '../dark-mode-switch/dark-mode-switch.component';
 import { UploadBtnComponent } from '../upload-btn/upload-btn.component';
 import { UserIconComponent } from '../user-icon/user-icon.component';
+import { AuthButtonComponent } from '../auth-button/auth-button.component'
 
 @Component({
   selector: 'app-menubar',
@@ -13,7 +14,8 @@ import { UserIconComponent } from '../user-icon/user-icon.component';
     SearchBarComponent,
     UploadBtnComponent,
     UserIconComponent,
-    DarkModeSwitchComponent
+    DarkModeSwitchComponent,
+    AuthButtonComponent
   ],
   templateUrl: './menubar.component.html',
   styleUrls: ['./menubar.component.css']

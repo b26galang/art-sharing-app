@@ -46,3 +46,6 @@ Thumbs.db
 # productionm
 dist/
 build/
+
+# temporary ignore to exclude Auth0 info
+main.ts

@@ -4,6 +4,9 @@ import { ButtonModule } from 'primeng/button';
 import { UserIconComponent } from '../user-icon/user-icon.component';
 import { LikeButtonComponent } from '../like-button/like-button.component';
 import { ImageModule } from 'primeng/image';
+import { PostService } from '../../services/post.service';
+import { Post } from '../../models/models';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-art-card',
@@ -13,7 +16,8 @@ import { ImageModule } from 'primeng/image';
     UserIconComponent, 
     ButtonModule,
     LikeButtonComponent,
-    ImageModule
+    ImageModule,
+    RouterModule
   ],
   templateUrl: './art-card.component.html',
   styleUrl: './art-card.component.css'

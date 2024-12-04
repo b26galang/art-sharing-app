@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArtCardComponent } from '../../components/art-card/art-card.component';
-import { ArtImageComponent } from '../../components/art-image/art-image.component';
 import { PaginatorComponent } from '../../components/paginator/paginator.component';
 import { PostService } from '../../services/post.service';
 import { Observable, of } from 'rxjs';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +13,7 @@ import { Observable, of } from 'rxjs';
     ArtCardComponent,
     CommonModule,
     PaginatorComponent,
-    ArtImageComponent
+    RouterModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

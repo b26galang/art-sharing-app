@@ -1,7 +1,7 @@
 <div class="card flex justify-content-center">
     <p-card [style]="{ width: '300px', minHeight: '400px' }">
         <ng-template pTemplate="header">
-            <a href="/art">
+            <a [routerLink]="['/post', post.id]">
                 <p-image 
                     [src]="post.imageUrl"
                     alt="Art"

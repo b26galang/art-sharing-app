@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MenubarComponent } from "./components/menubar/menubar.component";
-import { HomeComponent } from './pages/home/home.component';
 import { ThemeService } from './services/theme.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +12,13 @@ import { ThemeService } from './services/theme.service';
     CommonModule,
     RouterOutlet,
     MenubarComponent,
-    HomeComponent
+    RouterModule
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+
   title = "art-sharing-app";
 
   constructor(private themeService: ThemeService) {}

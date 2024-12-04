@@ -1,7 +1,11 @@
 <div class="main-container">
-    <div class="art-container">
+    <div class="art-container" *ngIf="post; else loading">
         <div class="image-container">
-            <app-art-image></app-art-image>
+            <p-image 
+                [src]="post.imageUrl"
+                alt="Art"
+                width="100%"
+            />
         </div>
         <div class="text-container">
             <div class="user-info">
@@ -9,17 +13,21 @@
                 <a href="/profile"><span class="username"> Username</span></a>
             </div> 
             <div class="art-title">
-                <h2>Artwork Title</h2>
+                <h2>{{ post.title }}</h2>
                 <app-like-button></app-like-button>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>{{ post.caption}}</p>
             <hr>
             <div class="comment-container">
                 <app-user-icon></app-user-icon>
                 <input type="text" pInputText id="title" placeholder="Leave a comment"/>
                 <p-button icon="pi pi-send" [rounded]="true" [text]="true" />
             </div>
-
         </div>
     </div>
 </div>
+
+<ng-template #loading>
+    <p>Loading post...</p>
+    <p *ngIf="errorMessage">{{ errorMessage }}</p>
+  </ng-template>

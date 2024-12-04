@@ -15,7 +15,7 @@ export class PostService {
     return this.http.get<any[]>(this.apiUrl);
   }
 
-  getPostById(id: number): Observable<any> {
+  getPostById(id: string): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/${id}`);
   }
 
@@ -23,11 +23,11 @@ export class PostService {
     return this.http.post<any>(this.apiUrl, user);
   }
 
-  updatePost(id: number, user: any): Observable<any> {
+  updatePost(id: string, user: any): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}/${id}`, user);
   }
 
-  deletePost(id: number): Observable<any> {
+  deletePost(id: string): Observable<any> {
     return this.http.delete<any>(`${this.apiUrl}/${id}`);
   }
 }

@@ -9,6 +9,6 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'profile', component: ProfileComponent },
     { path: 'upload', component: UploadComponent},
-    { path: 'art', component: ArtComponent},
+    { path: 'post/:id', component: ArtComponent},
     { path: 'settings', component: UserSettingsComponent}
 ];

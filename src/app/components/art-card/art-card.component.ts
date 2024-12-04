@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
-import { ArtImageComponent } from '../art-image/art-image.component';
 import { UserIconComponent } from '../user-icon/user-icon.component';
 import { LikeButtonComponent } from '../like-button/like-button.component';
+import { ImageModule } from 'primeng/image';
 
 @Component({
   selector: 'app-art-card',
@@ -12,12 +12,12 @@ import { LikeButtonComponent } from '../like-button/like-button.component';
     CardModule, 
     UserIconComponent, 
     ButtonModule,
-    ArtImageComponent,
-    LikeButtonComponent
+    LikeButtonComponent,
+    ImageModule
   ],
   templateUrl: './art-card.component.html',
   styleUrl: './art-card.component.css'
 })
 export class ArtCardComponent {
-
+  @Input() post: any;
 }

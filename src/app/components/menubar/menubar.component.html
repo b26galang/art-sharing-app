@@ -9,9 +9,11 @@
     <div class="p-toolbar-group-end">
         <app-dark-mode-switch></app-dark-mode-switch>
         <app-upload-btn></app-upload-btn>
-        <a href="/settings">
-            <app-user-icon></app-user-icon>
-        </a>
         <app-auth-button></app-auth-button>
+        <ng-container *ngIf="isAuthenticated | async">
+            <div class="user-icon">
+                <a href="/settings"><app-user-icon></app-user-icon></a>
+            </div>
+        </ng-container>
     </div>
 </p-toolbar>
